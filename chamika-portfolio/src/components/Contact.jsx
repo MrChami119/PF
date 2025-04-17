@@ -58,10 +58,10 @@ const Contact = () => {
                     <div>
                       <h4 className="text-lg font-semibold mb-1">Email</h4>
                       <a
-                        href="mailto:chamika@example.com"
+                        href="mailto:mrchamika119@gmail.com"
                         className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       >
-                        mrchamika119@example.com
+                        mrchamika119@gmail.com
                       </a>
                     </div>
                   </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                     <div>
                       <h4 className="text-lg font-semibold mb-1">LinkedIn</h4>
                       <a
-                        href="https://linkedin.com/in/chamika-gunarathne"
+                        href="https://www.linkedin.com/in/chamika-gunarathne-5906a1202/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -90,7 +90,7 @@ const Contact = () => {
                     <div>
                       <h4 className="text-lg font-semibold mb-1">GitHub</h4>
                       <a
-                        href="https://github.com/chamika-gunarathne"
+                        href="https://github.com/MrChami119"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
@@ -125,7 +125,7 @@ const Contact = () => {
                       <FiGithub size={20} />
                     </motion.a>
                     <motion.a
-                      href="mailto:mrchamika119@example.com"
+                      href="mailto:mrchamika119@gmail.com"
                       className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white"
                       whileHover={{ y: -5, scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
