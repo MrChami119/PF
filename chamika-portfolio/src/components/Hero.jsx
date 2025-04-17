@@ -7,10 +7,12 @@ import { FiDownload, FiMail } from "react-icons/fi"
 
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [showRightImage, setShowRightImage] = useState(true)
 
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY })
+      setShowRightImage(e.clientX > window.innerWidth / 2)
     }
 
     window.addEventListener("mousemove", handleMouseMove)
@@ -27,6 +29,35 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center items-center relative pt-20">
+      
+      {/* Left Side Image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: showRightImage ? 0 : 1, scale: showRightImage ? 0.5 : 1 }}
+        transition={{ duration: 0.8 }}
+        className="hidden md:block absolute left-10 top-1/2 transform -translate-y-1/2 z-0"
+      >
+        <img
+          src="/images/profile-left.jpg"
+          alt="Left Profile"
+          className="w-40 h-40 object-cover rounded-full shadow-lg border-4 border-white dark:border-gray-800 transition-transform duration-500"
+        />
+      </motion.div>
+
+      {/* Right Side Image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: showRightImage ? 1 : 0, scale: showRightImage ? 1 : 0.5 }}
+        transition={{ duration: 0.8 }}
+        className="hidden md:block absolute right-10 top-1/2 transform -translate-y-1/2 z-0"
+      >
+        <img
+          src="/images/profile-right.jpg"
+          alt="Right Profile"
+          className="w-40 h-40 object-cover rounded-full shadow-lg border-4 border-white dark:border-gray-800 transition-transform duration-500"
+        />
+      </motion.div>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="flex flex-col items-center text-center">
           <motion.div
@@ -40,7 +71,6 @@ const Hero = () => {
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-2 gradient-text">Chamika Gunarathne</h1>
 
-            {/* Subtitle with conditional color */}
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -75,7 +105,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 mt-8"
           >
             <motion.a
-              href="/resume.pdf"
+              href="/cv/Chamika-Gunarathne.pdf"
               download
               className="px-6 py-3 rounded-full bg-purple-600 text-white flex items-center justify-center gap-2 hover:bg-purple-700 transition-colors"
               whileHover={{ scale: 1.05 }}
