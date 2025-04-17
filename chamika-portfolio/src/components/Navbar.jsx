@@ -39,7 +39,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
         <div className="flex justify-between items-center">
           <motion.a
             href="#home"
-            className="text-2xl font-bold gradient-text"
+            className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
