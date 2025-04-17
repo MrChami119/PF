@@ -57,7 +57,7 @@ function App() {
             </motion.div>
           ) : (
             <>
-              <div className="fixed inset-0 -z-10">
+              <div className="fixed inset-0 -z-0">
                 <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
                   <Suspense fallback={null}>
                     <ParticleBackground />

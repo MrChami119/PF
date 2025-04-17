@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
-import { FiCalendar, FiMapPin, FiAward } from "react-icons/fi"
+import { FiCalendar, FiMapPin } from "react-icons/fi"
 
 const Education = () => {
   const ref = useRef(null)
@@ -35,99 +35,118 @@ const Education = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Education</h2>
             <div className="w-20 h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 mx-auto"></div>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="glassmorphism rounded-2xl p-8 relative">
-            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-purple-500 to-pink-500 rounded-l-2xl"></div>
-
-            <div className="ml-6">
-              <h3 className="text-2xl font-bold mb-2">Bachelor of Science in Computer Science</h3>
-              <h4 className="text-xl text-purple-500 dark:text-purple-400 mb-4">University of Ruhuna</h4>
-
-              <div className="flex flex-wrap gap-4 mb-6">
-                <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <FiCalendar className="mr-2" />
-                  <span>2020 - 2024 (Expected)</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* University Card */}
+            <motion.div 
+              variants={itemVariants} 
+              className="glassmorphism rounded-2xl p-8 relative overflow-hidden"
+            >
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+              
+              <div className="flex items-start mb-6">
+                <div className="w-16 h-16 mr-4">
+                  <img 
+                    src="/images/university-of-ruhuna-logo.png" 
+                    alt="University of Ruhuna Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <FiMapPin className="mr-2" />
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Bachelor of Computer Science</h3>
+                  <h4 className="text-lg text-purple-500 dark:text-purple-400">University of Ruhuna</h4>
+                </div>
+              </div>
+
+              <div className="flex items-center mb-3">
+                <div className="w-6 h-6 mr-2">
+                  <img 
+                    src="/images/ruhuna-flag.png" 
+                    alt="Sri Lanka Flag"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="text-gray-600 dark:text-gray-400">University of Ruhuna</span>
+              </div>
+
+              <div className="space-y-2 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center">
+                  <FiCalendar className="mr-2 flex-shrink-0" />
+                  <span>August 2022 - Present</span>
+                </div>
+                <div className="flex items-center">
+                  <FiMapPin className="mr-2 flex-shrink-0" />
                   <span>Matara, Sri Lanka</span>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div>
-                  <h5 className="text-lg font-semibold mb-2 flex items-center">
-                    <FiAward className="mr-2 text-purple-500" /> Achievements
-                  </h5>
-                  <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400 ml-6">
-                    <li>Dean's List for Academic Excellence (2021, 2022)</li>
-                    <li>First Place, University Hackathon 2022</li>
-                    <li>Research Publication on Machine Learning Applications</li>
-                  </ul>
-                </div>
+              <div className="absolute bottom-0 right-0 opacity-10 w-32 h-32">
+                <img 
+                  src="/images/university-of-ruhuna-logo.png" 
+                  alt="University of Ruhuna Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </motion.div>
 
+            {/* School Card */}
+            <motion.div 
+              variants={itemVariants} 
+              className="glassmorphism rounded-2xl p-8 relative overflow-hidden"
+            >
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+              
+              <div className="flex items-start mb-6">
+                <div className="w-16 h-16 mr-4">
+                  <img 
+                    src="/images/bandaranayake-college-logo.png" 
+                    alt="Bandaranayake College Logo"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <div>
-                  <h5 className="text-lg font-semibold mb-2">Relevant Coursework</h5>
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      "Data Structures & Algorithms",
-                      "Database Systems",
-                      "Web Development",
-                      "Software Engineering",
-                      "Artificial Intelligence",
-                      "Computer Networks",
-                      "Operating Systems",
-                      "Mobile Application Development",
-                    ].map((course, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 text-sm rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200"
-                      >
-                        {course}
-                      </span>
-                    ))}
-                  </div>
+                  <h3 className="text-xl font-bold mb-1">GCE Advanced Level</h3>
+                  <h4 className="text-lg text-blue-500 dark:text-blue-400">Bandaranayake College</h4>
                 </div>
               </div>
-            </div>
-          </motion.div>
 
-          <motion.div variants={itemVariants} className="mt-12 glassmorphism rounded-2xl p-8 relative">
-            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-500 to-purple-500 rounded-l-2xl"></div>
+              <div className="flex items-center mb-3">
+                <div className="w-6 h-6 mr-2">
+                  <img 
+                    src="/images/school-flag.jpg" 
+                    alt="Sri Lanka Flag"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <span className="text-gray-600 dark:text-gray-400">Bandaranayake College, Gampaha</span>
+              </div>
 
-            <div className="ml-6">
-              <h3 className="text-2xl font-bold mb-2">High School Diploma</h3>
-              <h4 className="text-xl text-blue-500 dark:text-blue-400 mb-4">National School</h4>
-
-              <div className="flex flex-wrap gap-4 mb-6">
-                <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <FiCalendar className="mr-2" />
+              <div className="space-y-2 text-gray-600 dark:text-gray-400">
+                <div className="flex items-center">
+                  <FiCalendar className="mr-2 flex-shrink-0" />
                   <span>2016 - 2019</span>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-400">
-                  <FiMapPin className="mr-2" />
-                  <span>Sri Lanka</span>
+                <div className="flex items-center">
+                  <FiMapPin className="mr-2 flex-shrink-0" />
+                  <span>Gampaha, Sri Lanka</span>
                 </div>
               </div>
 
-              <div>
-                <h5 className="text-lg font-semibold mb-2 flex items-center">
-                  <FiAward className="mr-2 text-blue-500" /> Achievements
-                </h5>
-                <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-400 ml-6">
-                  <li>Graduated with Distinction in Mathematics and Science</li>
-                  <li>School Science Fair Winner</li>
-                  <li>National Mathematics Competition Finalist</li>
-                </ul>
+              <div className="absolute bottom-0 right-0 opacity-10 w-32 h-32">
+                <img 
+                  src="/images/bandaranayake-college-logo.png" 
+                  alt="Bandaranayake College Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>

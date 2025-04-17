@@ -49,9 +49,9 @@ const About = () => {
               while my personal projects have allowed me to apply these concepts to real-world problems.
             </p>
             <p className="text-lg leading-relaxed">
-              I'm particularly interested in web development, artificial intelligence, and creating intuitive user
-              experiences. My goal is to leverage technology to build solutions that make a positive impact on people's
-              lives.
+            I’m deeply passionate about software engineering and love building intelligent, user-centered digital solutions. 
+            I thrive on designing systems that combine smart technology with intuitive design to improve everyday experiences. 
+            My mission is to use innovation and creativity to make a meaningful difference in people’s lives.
             </p>
           </motion.div>
 

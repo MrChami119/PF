@@ -44,34 +44,23 @@ const CustomCursor = () => {
 
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-      height: 32,
-      width: 32,
-      backgroundColor: "rgba(138, 43, 226, 0.3)",
-      mixBlendMode: "difference",
+      scale: 1,
     },
     hover: {
-      x: mousePosition.x - 24,
-      y: mousePosition.y - 24,
-      height: 48,
-      width: 48,
-      backgroundColor: "rgba(138, 43, 226, 0.5)",
-      mixBlendMode: "difference",
+      scale: 1.5,
     },
     click: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-      height: 32,
-      width: 32,
-      backgroundColor: "rgba(138, 43, 226, 0.8)",
-      mixBlendMode: "difference",
+      scale: 0.9,
     },
   }
 
   return (
     <motion.div
-      className="custom-cursor fixed top-0 left-0 rounded-full pointer-events-none z-50"
+      className="custom-cursor fixed top-0 left-0 w-8 h-8 rounded-full pointer-events-none z-50 bg-gradient-to-br from-pink-500 to-purple-500 mix-blend-difference"
+      style={{
+        left: `${mousePosition.x - 16}px`,
+        top: `${mousePosition.y - 16}px`,
+      }}
       variants={variants}
       animate={cursorVariant}
       transition={{ type: "spring", stiffness: 500, damping: 28 }}
