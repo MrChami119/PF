@@ -31,42 +31,42 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: <FiCode />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "HTML", "CSS"],
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "C#"],
     },
     {
-      title: "Frontend",
+      title: "Frontend Development",
       icon: <FiLayout />,
-      skills: ["React", "Vue.js", "Angular", "Tailwind CSS", "Bootstrap", "SASS", "Redux"],
+      skills: ["React.js", "Next.js", "Vue.js", "Tailwind CSS", "Material UI", "Redux"],
     },
     {
-      title: "Backend",
+      title: "Backend Development",
       icon: <FiServer />,
-      skills: ["Node.js", "Express", "Spring Boot", "Django", "Flask", "RESTful APIs", "GraphQL"],
+      skills: ["Node.js", "Express", "ASP.NET Core", "Django", "REST APIs", "GraphQL"],
     },
     {
-      title: "Databases",
+      title: "Mobile Development",
+      icon: <FiCpu />,
+      skills: ["React Native", "Flutter", "Android (Java)"],
+    },
+    {
+      title: "Database & Cloud",
       icon: <FiDatabase />,
-      skills: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Redis", "SQLite"],
+      skills: ["MongoDB", "PostgreSQL", "Firebase", "Microsoft SQL", "Azure", "AWS"],
     },
     {
       title: "DevOps & Tools",
       icon: <FiTool />,
-      skills: ["Git", "Docker", "AWS", "CI/CD", "Webpack", "Vite", "npm/yarn"],
+      skills: ["Docker", "Kubernetes", "CI/CD Pipelines", "Git", "JIRA", "Postman"],
     },
     {
-      title: "Version Control",
+      title: "Software Practices",
       icon: <FiGitBranch />,
-      skills: ["Git", "GitHub", "GitLab", "Bitbucket", "Pull Requests", "Code Reviews"],
+      skills: ["Agile Methodology", "Test-Driven Development", "Clean Architecture", "Microservices"],
     },
     {
       title: "Soft Skills",
       icon: <FiUsers />,
-      skills: ["Team Collaboration", "Problem Solving", "Communication", "Time Management", "Adaptability"],
-    },
-    {
-      title: "Other",
-      icon: <FiCpu />,
-      skills: ["Data Structures", "Algorithms", "OOP", "Design Patterns", "Testing", "UI/UX Design"],
+      skills: ["Team Leadership", "Problem Solving", "Technical Mentoring", "Client Communication"],
     },
   ]
 
@@ -99,21 +99,17 @@ const Skills = () => {
                   </div>
                   <h3 className="text-xl font-semibold">{category.title}</h3>
                 </div>
-                <div className="space-y-3">
+                <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="relative">
-                      <div className="flex justify-between mb-1">
-                        <span className="text-sm font-medium">{skill}</span>
-                      </div>
-                      <div className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={{ width: `${Math.random() * 40 + 60}%` }}
-                          transition={{ duration: 1, delay: 0.2 + skillIndex * 0.1 }}
-                          className="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"
-                        />
-                      </div>
-                    </div>
+                    <motion.span
+                      key={skillIndex}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.1 + skillIndex * 0.05 }}
+                      className="inline-block px-3 py-1.5 text-sm bg-gradient-to-r from-purple-500/10 to-pink-500/10 dark:from-purple-500/20 dark:to-pink-500/20 rounded-full border border-purple-500/20 dark:border-purple-500/30 text-purple-600 dark:text-purple-300"
+                    >
+                      {skill}
+                    </motion.span>
                   ))}
                 </div>
               </motion.div>
