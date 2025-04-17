@@ -91,7 +91,7 @@ const Contact = () => {
                         href="mailto:chamika@example.com"
                         className="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       >
-                        chamika@example.com
+                        mrchamika119@example.com
                       </a>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                       >
-                        linkedin.com/in/chamika-gunarathne
+                        https://www.linkedin.com/in/chamika-gunarathne-5906a1202/
                       </a>
                     </div>
                   </div>
@@ -125,7 +125,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
                       >
-                        github.com/chamika-gunarathne
+                        https://github.com/MrChami119
                       </a>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ const Contact = () => {
                   <h4 className="text-lg font-semibold mb-4">Connect With Me</h4>
                   <div className="flex space-x-4">
                     <motion.a
-                      href="https://linkedin.com/in/chamika-gunarathne"
+                      href="https://www.linkedin.com/in/chamika-gunarathne-5906a1202/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white"
@@ -145,7 +145,7 @@ const Contact = () => {
                       <FiLinkedin size={20} />
                     </motion.a>
                     <motion.a
-                      href="https://github.com/chamika-gunarathne"
+                      href="https://github.com/MrChami119"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white"
@@ -155,7 +155,7 @@ const Contact = () => {
                       <FiGithub size={20} />
                     </motion.a>
                     <motion.a
-                      href="mailto:chamika@example.com"
+                      href="mailto:mrchamika119@example.com"
                       className="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white"
                       whileHover={{ y: -5, scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
