@@ -39,7 +39,22 @@ const Hero = () => {
             className="mb-6"
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-2 gradient-text">Chamika Gunarathne</h1>
-            <div className="h-12 md:h-16 flex justify-center">
+
+            {/* Subtitle with conditional color */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-lg md:text-xl font-medium"
+            >
+              <span className="text-black dark:text-white">Undergraduate</span>
+              <span className="mx-2 text-black dark:text-white">|</span>
+              <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-pulse">
+                Aspiring Software Engineer
+              </span>
+            </motion.p>
+
+            <div className="h-12 md:h-16 flex justify-center mt-4">
               <Typewriter
                 options={{
                   strings: ["Undergraduate", "Aspiring Software Engineer", "Problem Solver", "Tech Enthusiast"],
