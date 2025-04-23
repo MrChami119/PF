@@ -31,37 +31,37 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: <FiCode />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C#"],
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "C","C#","C++", "Php"],
     },
     {
       title: "Frontend Development",
       icon: <FiLayout />,
-      skills: ["React.js", "Next.js", "Vue.js", "Tailwind CSS", "Material UI", "Redux"],
+      skills: ["React.js", "Next.js", "Tailwind CSS", "Material UI", "html", "css"],
     },
     {
       title: "Backend Development",
       icon: <FiServer />,
-      skills: ["Node.js", "Express", "ASP.NET Core", "Django", "REST APIs", "GraphQL"],
+      skills: ["Springboot", "Express", "REST APIs"],
     },
     {
       title: "Mobile Development",
       icon: <FiCpu />,
-      skills: ["React Native", "Flutter", "Android (Java)"],
+      skills: ["Flutter", "Android (Java)"],
     },
     {
       title: "Database & Cloud",
       icon: <FiDatabase />,
-      skills: ["MongoDB", "PostgreSQL", "Firebase", "Microsoft SQL", "Azure", "AWS"],
+      skills: ["MongoDB", "PostgreSQL", "AWS"],
     },
     {
       title: "DevOps & Tools",
       icon: <FiTool />,
-      skills: ["Docker", "Kubernetes", "CI/CD Pipelines", "Git", "JIRA", "Postman"],
+      skills: ["Git","Postman","Swagger","Docker"],
     },
     {
       title: "Software Practices",
       icon: <FiGitBranch />,
-      skills: ["Agile Methodology", "Test-Driven Development", "Clean Architecture", "Microservices"],
+      skills: ["Agile Methodology", "Version Control"],
     },
     {
       title: "Soft Skills",
