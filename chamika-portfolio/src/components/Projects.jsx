@@ -32,7 +32,7 @@ const Projects = () => {
       title: "Automating Utility Processes with Precision (AUPP)",
       description: "An automated utility management system to streamline tasks like form submissions, site visits, media management, CEB approval, and installation tracking. The system improves efficiency, reduces delays, and enhances communication among stakeholders.",
       image: "/images/projects/aupp.jpg",
-      technologies: ["Spring Boot", "React", "Laravel", "PostgreSQL","Docker","Amazon S3","RabbitMQ"],
+      technologies: ["Spring Boot", "React", "PostgreSQL", "Laravel"],
     },
     {
       title: "IoT Patient Management System",
@@ -48,7 +48,7 @@ const Projects = () => {
     },   
     {
       title: "Speatance - AI English Companion",
-      description: "Developed an AI-powered Flutter app that helps users practice spoken English through interactive conversations. Allows users to speak with the app, receive feedback, and improve their fluency in real time.",
+      description: "Developed a Flutter mobile app using AI tools and models to help users improve spoken English. The app enables real-time conversations with speech recognition and NLP, offering instant feedback to enhance fluency and pronunciation.",
       image: "/images/projects/spaetance.jpg",
       technologies: ["Flutter", "Dart", "AI", "Speech Recognition"],
     },
@@ -56,7 +56,7 @@ const Projects = () => {
       title: "Weather Mate",
       description: "A dynamic weather forecasting app that provides real-time weather updates. Fetches current weather of user's location and allows searching different locations with 5-day forecasts for better planning.",
       image: "/images/projects/weather.jpg",
-      technologies: ["Flutter", "Dart", "Weather API", "Geolocation"],
+      technologies: ["Flutter", "Dart", "Weather API"],
     },
     {
       title: "AI Chatbot",
@@ -72,7 +72,7 @@ const Projects = () => {
     },
     {
       title: "ORFOO - Food Ordering System",
-      description: "A C# based food ordering system for restaurants that allows customers to order directly from their tables. It streamlines the ordering process by sending orders to the admin and kitchen, notifying customers when their order is ready.",
+      description: "A C#-based food ordering system for restaurants that lets customers order directly from their tables, streamlining communication between the kitchen and admin while notifying customers when their food is ready. I was mostly involved in a supervisory role throughout the project.",
       image: "/images/projects/orfoo.jpg",
       technologies: ["C#", ".NET", "Windows Forms", "SQL Server"],
     },
